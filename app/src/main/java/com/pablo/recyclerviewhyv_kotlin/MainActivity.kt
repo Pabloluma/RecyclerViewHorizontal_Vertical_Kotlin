@@ -51,9 +51,6 @@ class MainActivity : AppCompatActivity(), AdaptadorVert.OnItemClickListener {
         recyclerView2.adapter = adapter2
 
     }
-    fun obtenerTipoDato(variable: Any): String {
-        return variable::class.simpleName ?: "Desconocido"
-    }
     //RecyclerView Vertical
     override fun onItemClick(position: Int) {
         var intents: Intent = Intent(this, segunda::class.java)
